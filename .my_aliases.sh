@@ -15,7 +15,7 @@ alias ij="open -a /Applications/IntelliJ\ IDEA\ CE.app"
 alias gs='git status'
 alias ga='git add -u'
 alias gcl='git clone'
-alias gs='git push'
+alias gsh='git push'
 alias gl='git pull'
 alias gco='git checkout'
 alias gcm='git checkout master'
@@ -28,3 +28,8 @@ alias replaym="spotify replay"
 alias sufflems="spotify toggle shuffle"
 alias repeatms="spotify toggle repeat"
 alias linkm="spotify share url"
+
+function start-dm {
+    docker-machine start default
+    eval "$(docker-machine env default)"
+}

@@ -103,7 +103,3 @@ source "$HOME/.my_secrets.sh"
 source "$HOME/.my_secrets_paths.sh"
 export PATH="/Users/lexa/anaconda/bin:$PATH"
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-
-# docker-machine
-docker-machine start default
-eval "$(docker-machine env default)"
